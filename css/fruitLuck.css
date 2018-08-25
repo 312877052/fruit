@@ -5,3 +5,26 @@
 #registerBtn{
 	margin-left: 40%;
 }
+
+#loginTable td{
+	padding: 5px;
+}
+
+#loginBtn{
+	margin-left: 35%;
+}
+
+#bottomNavTable{
+	width: 100%;
+	position: fixed;
+	bottom:0;
+}
+
+#bottomNavTable td{
+	text-align: center;
+}
+
+.bottomNavIcon{
+	height: 30px;
+}
+
