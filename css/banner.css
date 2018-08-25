@@ -1,0 +1,25 @@
+.style{
+	height: 80px;
+	width: 80px;
+	text-align: center;
+}
+
+.bingo {
+text-align: center;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.bingoImg{
+	height: 80px;
+	width: 80px;
+}
+
+.bingoTable {
+	margin:auto;
+	margin-top: 20px;
+}
+
+.bingo_td {
+	padding-top: 20px;
+}
