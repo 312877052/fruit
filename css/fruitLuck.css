@@ -100,3 +100,33 @@
 	margin-right: 10px;
 	text-align: right;
 }
+
+#videoImg{
+	width: 100%;
+	padding: 5px;
+}
+
+.videoIcon{
+	height: 30px;
+}
+
+#videoTable{
+	width: 100%;
+	text-align: center;
+}
+
+#myTreeListTitle{
+	text-align: center;
+	margin: 5px;
+}
+
+.myTreeList{
+	margin: 20px 4px;
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+
+.myTreeList p{
+	margin: 5px;
+}
