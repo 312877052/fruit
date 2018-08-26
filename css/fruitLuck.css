@@ -73,3 +73,30 @@
 #buyMesEnsure{
 	text-align: center;
 }
+
+#ensureMesAddressDiv{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+
+#ensureMesTreeDiv{
+	text-align: center;
+	margin: 10px;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+
+#ensureMesTreeDiv p{
+	margin-bottom: 0px;
+}
+
+#ensureMesBuyTableRight{
+	text-align: right;
+}
+
+#ensureMesBtn{
+	margin-right: 10px;
+	text-align: right;
+}
