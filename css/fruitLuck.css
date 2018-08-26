@@ -28,3 +28,36 @@
 	height: 30px;
 }
 
+.treeListTitle{
+	margin-bottom: 50px;
+}
+
+.treeListDiv{
+	padding: 10px;
+}
+
+.treeListImg{
+	width: 100px;
+}
+
+#buyMesFruitImg{
+	height: 180px;
+	border-radius:10px;
+}
+
+#buyMesDiv{
+	padding: 10px;
+}
+
+#buyMesTable{
+	width: 98%;
+}
+
+.buyMesIcon{
+	width:25px;
+}
+
+#buyMesNumber{
+	width: 80px;
+	height: 34px;
+}
