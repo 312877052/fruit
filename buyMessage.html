@@ -8,10 +8,9 @@
     <link href="css/mui.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/fruitLuck.css" />
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
-</head>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+   
+</head> 
 <body>
 	<!--
     	作者：abusuper@outlook.com
@@ -76,24 +75,115 @@
 			</td>
 		</tr>
 	</table>
-	<hr />
 	</div>
 	
 	<!--
     	作者：abusuper@outlook.com
     	时间：2018-08-26
-    	描述：swiper 
-    -->
-
+    	描述：详情和工厂
+   -->
+    
+    <div class="mui-row treeListDiv">
+    <div id="fruitMoreMessTree" class="mui-col-sm-6 mui-col-xs-6 fruitMoreMess"><p>果苗详情</p></div>
+    <div id="fruitMoreMessFactory" class="mui-col-sm-6 mui-col-xs-6 fruitMoreMess"><p>工厂信息</p></div>
+		<table id="buyMesFruitTableLeft" class="mui-col-sm-6 mui-col-xs-6">
+			<tr>
+				<td>
+					<p>产品名称</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>领养方式</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>生长周期</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>价格</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>树苗培育基地</p>
+				</td>
+			</tr>
+		</table>
+		<table id="buyMesFruitTableRight" class="mui-col-sm-6 mui-col-xs-6">
+			<tr>
+				<td>
+					<p>果缘苹果</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>株</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>6个月</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>￥200.00/株</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>广西桂林百香果工厂</p>
+				</td>
+			</tr>
+		</table>
+		<div id="fruitMoreMessFactoryDiv" class="mui-col-sm-12 mui-col-xs-12" >
+			<p><b>广西桂林百香果工厂</b></p>
+			<p>荔浦县牛牛家农业有限公司是百香果等产品专业生产加工的公司，拥有完整、科学的质量管理体系。荔浦县牛牛家农业有限公司的诚信、实力和产品质量获得业界的认可。</p>
+		</div>
+	</div>
+	
+	<div id="buyMesEnsure">
+		<p><b>认购须知</b></p>
+			<p>(1)确认开发商是否是有合法手续的房地产公司； 
+				<br />(2)签订认购书； 
+				<br /> (3)签订合同； 
+				<br /> (4)办理预售登记及转让； 
+				<br /> (5)办理入住； 
+				<br /> (6)产权过户、领取产权证。 
+	</div>
 
 </body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.js" ></script>
+ 	<script type="text/javascript" charset="utf-8">
+      	mui.init(
+      		$("#fruitMoreMessFactoryDiv").hide()
+      	);
+    </script>
 
-<!--描述：轮播图-->
+	<!--描述：轮播图--> 
 	<script type="text/javascript">
   	var gallery = mui('.mui-slider');
 	gallery.slider({
   	interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
 	});
   	</script>
-	
+  	
+  	<!-- 切换卡片效果-->
+	<script>
+		$("#fruitMoreMessFactory").click(function(){
+			$("#buyMesFruitTableLeft").hide(); 
+			$("#buyMesFruitTableRight").hide();
+			$("#fruitMoreMessFactoryDiv").show();
+		})
+		$("#fruitMoreMessTree").click(function(){
+			$("#buyMesFruitTableLeft").show();
+			$("#buyMesFruitTableRight").show();
+			$("#fruitMoreMessFactoryDiv").hide();
+		})
+	</script>
 </html>

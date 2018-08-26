@@ -61,3 +61,15 @@
 	width: 80px;
 	height: 34px;
 }
+
+.fruitMoreMess{
+	text-align: center;
+}
+
+#buyMesFruitTableRight{
+	text-align: right;
+}
+
+#buyMesEnsure{
+	text-align: center;
+}
