@@ -92,7 +92,7 @@
 	margin-bottom: 0px;
 }
 
-#ensureMesBuyTableRight{
+.MesTableRight{
 	text-align: right;
 }
 
@@ -215,4 +215,47 @@
 	text-align: center;
 	border: 1px solid cadetblue;
 	margin: 5px;
+}
+
+#moneyIcon{
+	width: 20px;
+	height: 20px;
+}
+
+.head{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-image:url(../img/阿布.jpg);
+}
+
+#sumMoneyBottom{
+	border: none;
+}
+
+#headDiv{
+	text-align: center;
+	width: 95%;
+	height: 120px;
+	background: gray;
+	margin: 8px auto;
+	border-radius: 5px;
+}
+
+.myIcon{
+	width: 60px;
+}
+
+.myNavIconFirst{
+	width: 100%;
+	text-align: center;
+	margin-top: 80px;
+}
+.myNavIconFirst td{
+	padding: 10px;
+}
+
+.MesTableRight{
+	width: 70%;
+	text-align: right;
 }
