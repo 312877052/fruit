@@ -6,10 +6,7 @@
     <title>订单信息</title>
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/banner.css" />
-	<link rel="stylesheet" href="css/fruitLuck.css" />
-	<link rel="stylesheet" href="css/bootstrap.css" />
-   
+	<link rel="stylesheet" href="css/fruitLuck.css" />   
 </head> 
 <body>
 	<!--
@@ -145,12 +142,23 @@
 	</div>
 
 </body>
-	<script type="text/javascript" src="js/jquery.js" ></script>
-	<script type="text/javascript" src="js/bootstrap.js" ></script>
  	<script type="text/javascript" charset="utf-8">
+ 	var fruitMoreMessFactoryDiv = document.getElementById("fruitMoreMessFactoryDiv");
       	mui.init(
-      		$("#fruitMoreMessFactoryDiv").hide()
+      		fruitMoreMessFactoryDiv.style.visibility='hidden'
       	);
+      	
+      	var buyMesFruitTableLeft = document.getElementById("buyMesFruitTableLeft");
+      	var fruitMoreMessFactoryDiv = document.getElementById("fruitMoreMessFactoryDiv");
+		
+		mui('body').on('tap','#fruitMoreMessFactory',function(){
+			buyMesFruitTableLeft.style.visibility='hidden'
+			fruitMoreMessFactoryDiv.style.visibility='visible'
+		});
+		mui('body').on('tap','#fruitMoreMessTree',function(){
+			buyMesFruitTableLeft.style.visibility='visible'
+			fruitMoreMessFactoryDiv.style.visibility='hidden'
+		});
     </script>
 
 	<!--描述：轮播图--> 
@@ -161,17 +169,4 @@
 	});
   	</script>
   	
-  	<!-- 切换卡片效果-->
-	<script>
-		$("#fruitMoreMessFactory").click(function(){
-			$("#buyMesFruitTableLeft").hide(); 
-			$("#buyMesFruitTableRight").hide();
-			$("#fruitMoreMessFactoryDiv").show();
-		})
-		$("#fruitMoreMessTree").click(function(){
-			$("#buyMesFruitTableLeft").show();
-			$("#buyMesFruitTableRight").show();
-			$("#fruitMoreMessFactoryDiv").hide();
-		})
-	</script>
-</html>
+</html> 
