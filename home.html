@@ -40,15 +40,13 @@
 	<div>
 	<table class="bingoTable">
 		<tr>
-			<td class="bingo" >
-				<img id="buyTreeHomeIcon" src="img/KeepTree.jpg" class="bingoImg"><br>买苗
-			</td>
-			<td class="bingo"><img id="starHomeIcon" src="img/Collection.jpg" class="bingoImg"/><br>收藏</td>
-			<td class="bingo"><img id="buyListHomeIcon" src="img/Order.jpg" class="bingoImg"/><br>订单</td>
-		</tr>
+			<td class="bingo" ><a id="buyTreeHomeIcon" href="#"><img  src="img/KeepTree.jpg" class="bingoImg"></a><br>买苗</td>
+			<td class="bingo"><a id="starHomeIcon" href="star.html"><img  src="img/Collection.jpg" class="bingoImg"/></a><br>收藏</td>
+			<td class="bingo"><a id="buyListHomeIcon" href="buyList.html"><img  src="img/Order.jpg" class="bingoImg"/></a><br>订单</td>
+		</tr> 
 		<tr>
-			<td class="bingo bingo_td"><img id="messageHomeIcon" src="img/News.jpg" class="bingoImg"/></a> <br>消息</td>
-			<td class="bingo bingo_td"><img id="fruitSuperMarketHomeIcon" src="img/FruitMarket.jpg" class="bingoImg"/></a> <br>果市</td>
+			<td class="bingo bingo_td"><a id="messageHomeIcon" href="Message.html"> <img  src="img/News.jpg" class="bingoImg"/></a><br>消息</td>
+			<td class="bingo bingo_td"><a id="fruitSuperMarketHomeIcon" href="fruitSupermarket.html"><img  src="img/FruitMarket.jpg" class="bingoImg"/></a><br>果市</td>
 		</tr> 
 	</table>
 	</div>
@@ -79,9 +77,8 @@
 	gallery.slider({
   	interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
 	});
-	
-	mui('body').on('click','a',function(){document.location.href=this.href;});
+		
+	//mui('body').on('click','a',function(){document.location.href=this.href;});
 	mui('body').on('tap','a',function(){document.location.href=this.href;}); 
-
-  	</script>
-</html>
+	 </script> 
+</html> 
