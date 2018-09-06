@@ -8,46 +8,12 @@
 		<script src="js/mui.min.js"></script>
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/fruitLuck.css" />
-		<link rel="stylesheet" href="css/bootstrap.css" />
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
 		</script>
 	</head>
 
 	<body>
-		<!--
-    	作者：abusuper@outlook.com
-    	时间：2018-08-24
-    	描述：我的果园列表 - abu
-    -->
-		<div id="headDiv">
-			<p id="userName">DEMO</p>
-			<p id="userSign">植物可以净化心灵</p>
-			<a href="PersonalInfo.html"><img class="head" src="img/阿布.jpg" /></a>
-		</div>
-
-		<table class="myNavIconFirst">
-			<tr>
-				<td>
-					<a href="star.html"><img class="myIcon" src="img/资源 1-100.jpg" /><br /></a>
-				</td>
-				<td>
-					<a href="buyCar.html"><img class="myIcon" src="img/资源 2-100.jpg" /><br /></a>
-				</td>
-				<td>
-					<a href="money.html"><img class="myIcon" src="img/资源 5-100.jpg" /><br /></a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="address.html"><img class="myIcon" src="img/资源 4-100.jpg" /><br /></a>
-				</td>
-				<td>
-					<a href="Setting.html"><img class="myIcon" src="img/资源 3-100.jpg" /><br /></a>
-				</td>
-			</tr>
-		</table>
-
 		<!--
         	作者：abusuper@outlook.com
         	时间：2018-09-02
@@ -68,12 +34,47 @@
 				<img id="myIcon" class="bottomNavIcon" src="img/资源 13-100.jpg" />
 			</a>
 		</nav>
-	</body>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script>		 
-		mui('body').on('click','a',function(){document.location.href=this.href;});
-		mui('body').on('tap','a',function(){document.location.href=this.href;}); 
-	</script> 
 
-</html> 
+		<div class="mui-content">
+			<!--
+    	作者：abusuper@outlook.com
+    	时间：2018-08-24
+    	描述：我的果园列表 - abu
+    -->
+			<div id="headDiv">
+				<p id="userName">DEMO</p>
+				<p id="userSign">植物可以净化心灵</p>
+				<a href="PersonalInfo.html"><img class="head" src="img/阿布.jpg" /></a>
+			</div>
+
+			<table class="myNavIconFirst">
+				<tr>
+					<td>
+						<a href="star.html"><img class="myIcon" src="img/资源 1-100.jpg" /><br /></a>
+					</td>
+					<td>
+						<a href="buyCar.html"><img class="myIcon" src="img/资源 2-100.jpg" /><br /></a>
+					</td>
+					<td>
+						<a href="money.html"><img class="myIcon" src="img/资源 5-100.jpg" /><br /></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="address.html"><img class="myIcon" src="img/资源 4-100.jpg" /><br /></a>
+					</td>
+					<td>
+						<a href="Setting.html"><img class="myIcon" src="img/资源 3-100.jpg" /><br /></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</body>
+	<script>
+		mui('body').on('tap', 'a', function() {
+			document.location.href = this.href;
+		});
+	</script>
+
+</html>
